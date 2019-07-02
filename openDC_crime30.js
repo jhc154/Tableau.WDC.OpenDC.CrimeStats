@@ -76,8 +76,8 @@
         }];
 
         var tableSchema = {
-            id: "ODC_Permits_2019",
-            alias: "Test for Open Data DC Permits 2019",
+            id: "ODC_CrimeStats30",
+            alias: "OpenDC Crime Stats",
             columns: cols
         };
 
