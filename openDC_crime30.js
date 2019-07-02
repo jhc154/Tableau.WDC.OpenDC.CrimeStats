@@ -131,7 +131,7 @@
     tableau.registerConnector(myConnector);
     $(document).ready(function () {
     $("#submitButton").click(function () {
-        tableau.connectionName = "DC OPEN DATA FEED";
+        tableau.connectionName = "DC OPEN DATA CRIME STATS";
         tableau.submit();
     });
 });
