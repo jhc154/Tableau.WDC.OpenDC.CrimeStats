@@ -88,7 +88,8 @@
 
     myConnector.getData = function(table, doneCallback) {
         //JSON link based on site-generated query for all fields based on https://opendata.dc.gov/datasets/crime-incidents-in-the-last-30-days
-        $.getJSON("https://maps2.dcgis.dc.gov/dcgis/rest/services/FEEDS/MPD/MapServer/8/query?where=1%3D1&outFields=*&outSR=4326&f=json", function(resp) {
+        var apiCall = "https://maps2.dcgis.dc.gov/dcgis/rest/services/FEEDS/MPD/MapServer/8/query?where=1%3D1&outFields=*&outSR=4326&f=json"
+        $.getJSON(apiCall, function(resp) {
             var feat = resp.features,
                 tableData = [];
 
